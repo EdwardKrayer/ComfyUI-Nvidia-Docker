@@ -51,6 +51,13 @@ RUN apt-get update -y --fix-missing \
     git \
     sudo \
     libgl1 \
+    libsm6 \
+    libxrender1 \
+    libxext6 \
+    ffmpeg \
+    libgl1 \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
   && apt-get clean
 
 ENV BUILD_FILE="/etc/image_base.txt"
