@@ -49,6 +49,7 @@ RUN apt-get update -y --fix-missing \
     python3-venv \
     git \
     sudo \
+    libgl1 \
   && apt-get clean
 
 ENV BUILD_FILE="/etc/image_base.txt"
