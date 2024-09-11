@@ -7,6 +7,7 @@ ENV NV_CUDNN_PACKAGE_NAME="libcudnn8"
 ENV NV_CUDA_ADD=cuda12.2
 ENV NV_CUDNN_PACKAGE="$NV_CUDNN_PACKAGE_NAME=$NV_CUDNN_VERSION-1+$NV_CUDA_ADD"
 ENV NV_CUDNN_PACKAGE_DEV="$NV_CUDNN_PACKAGE_NAME-dev=$NV_CUDNN_VERSION-1+$NV_CUDA_ADD"
+LABEL org.opencontainers.image.source=https://github.com/edwardkrayer/ComfyUI-Nvidia-Docker
 LABEL com.nvidia.cudnn.version="${NV_CUDNN_VERSION}"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
